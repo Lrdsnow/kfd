@@ -41,7 +41,6 @@
 		29A765292A393FCB006617E8 /* perf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = perf.h; sourceTree = "<group>"; };
 		29E9572E2A6AFDA9005C43C0 /* static_info.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = static_info.h; sourceTree = "<group>"; };
 		29E9572F2A6AFDB6005C43C0 /* dynamic_info.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dynamic_info.h; sourceTree = "<group>"; };
-		658C54B52A7419310003EA04 /* com.apple.MobileGestalt.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = com.apple.MobileGestalt.plist; sourceTree = "<group>"; };
 		C80698892A71436A001A593E /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
 		C806988A2A71436A001A593E /* helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helpers.m; sourceTree = "<group>"; };
 		C806988C2A71436A001A593E /* AAAA.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AAAA.bin; sourceTree = "<group>"; };
@@ -66,7 +65,6 @@
 		2948BA6A2A3162C600B2ED3C /* libkfd */ = {
 			isa = PBXGroup;
 			children = (
-				658C54B52A7419310003EA04 /* com.apple.MobileGestalt.plist */,
 				C8843C252A724BC100CA0DC9 /* CBindings */,
 				C80698912A714947001A593E /* fun.h */,
 				C806988C2A71436A001A593E /* AAAA.bin */,
@@ -201,7 +199,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					297BA1042A310AE100D1E51A = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -293,11 +291,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -353,11 +349,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -382,11 +376,9 @@
 				CODE_SIGN_ENTITLEMENTS = kfd/kfd.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"kfd/Preview Content\"";
-				DEVELOPMENT_TEAM = 8PHCD4D6H9;
+				DEVELOPMENT_TEAM = 6Q625HQD73;
 				ENABLE_HARDENED_RUNTIME = YES;
-				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -399,13 +391,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lrdsnow.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lrdsnow.test3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -426,11 +417,9 @@
 				CODE_SIGN_ENTITLEMENTS = kfd/kfd.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"kfd/Preview Content\"";
-				DEVELOPMENT_TEAM = 8PHCD4D6H9;
+				DEVELOPMENT_TEAM = 6Q625HQD73;
 				ENABLE_HARDENED_RUNTIME = YES;
-				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -443,13 +432,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lrdsnow.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lrdsnow.test3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";

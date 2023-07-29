@@ -821,6 +821,7 @@ int do_fun(u64 kfd) {
 //        return overwriteFileWithDataImpl(originPath: "/private/var/db/MobileIdentityData/AuthListBannedCdHashes.plist", replacementData: try! Data(base64Encoded: blankplist)!)
 //    } let blankplist = "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHBsaXN0IFBVQkxJQyAiLS8vQXBwbGUvL0RURCBQTElTVCAxLjAvL0VOIiAiaHR0cDovL3d3dy5hcHBsZS5jb20vRFREcy9Qcm9wZXJ0eUxpc3QtMS4wLmR0ZCI+CjxwbGlzdCB2ZXJzaW9uPSIxLjAiPgo8ZGljdC8+CjwvcGxpc3Q+Cg=="
     print("done!!!\n");
+    do_kclose(kfd);
     do_respring();
     return 0;
 }

@@ -725,6 +725,8 @@ int do_fun(u64 kfd) {
     funVnodeHide(kfd, "/System/Library/PrivateFrameworks/MaterialKit.framework/Assets.car");
     print("hiding dock\n");
     funVnodeHide(kfd, "/System/Library/PrivateFrameworks/CoreMaterial.framework/dockDark.materialrecipe");
+    printf("hiding lockicons\n");
+    funVnodeHide(kfd, "/System/Library/PrivateFrameworks/CoverSheet.framework/Assets.car");
 //    funVnodeOverwrite(kfd, "/System/Library/AppPlaceholders/Stocks.app/AppIcon60x60@2x.png", "/System/Library/AppPlaceholders/Tips.app/AppIcon60x60@2x.png"); // replace destination from targeted
 //    funCSFlags(kfd, "launchd");
 //    funTask(kfd, "kfd");

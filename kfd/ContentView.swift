@@ -25,13 +25,27 @@ struct ContentView: View {
         NavigationView {
             Form {
                 Section {
-                    HStack {
-                        Button("Hide Dock & Home Bar") {
+                    VStack {
+                        Button("Open Kernel") {
                             puaf_pages = puaf_pages_options[puaf_pages_index]
                             kfd = do_kopen(UInt64(puaf_pages), UInt64(puaf_method), UInt64(kread_method), UInt64(kwrite_method))
-                            do_fun(kfd)
-//                            execCmd(args: [CommandLine.arguments[0], "whoami"])
                         }.disabled(kfd != 0).frame(minWidth: 0, maxWidth: .infinity)
+                        Button("Hide HomeBar") {
+                            hide_homebar(kfd)
+                        }.disabled(kfd == 0).frame(minWidth: 0, maxWidth: .infinity)
+                        Button("Hide DarkMode Dock") {
+                            hide_darkmode_dock(kfd)
+                        }.disabled(kfd == 0).frame(minWidth: 0, maxWidth: .infinity)
+                        Button("Hide LightMode Dock") {
+                            hide_lightmode_dock(kfd)
+                        }.disabled(kfd == 0).frame(minWidth: 0, maxWidth: .infinity)
+                        Button("Hide LockScreen Icons") {
+                            hide_lsicons(kfd)
+                        }.disabled(kfd == 0).frame(minWidth: 0, maxWidth: .infinity)
+                        Button("Close Kernel & Respring") {
+                            do_kclose(kfd)
+                            do_respring()
+                        }.disabled(kfd == 0).frame(minWidth: 0, maxWidth: .infinity)
                     }.buttonStyle(.bordered)
                 }.listRowBackground(Color.clear)
                 if kfd != 0 {
@@ -42,7 +56,7 @@ struct ContentView: View {
                         }.frame(minWidth: 0, maxWidth: .infinity)
                     }.listRowBackground(Color.clear)
                 }
-            }.navigationBarTitle(Text("kfd"), displayMode: .inline)
+            }
         }
     }
 }

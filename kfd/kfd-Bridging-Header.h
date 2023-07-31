@@ -3,5 +3,6 @@
  */
 
 #include "fun.h"
+#include "helpers.h"
 #include "CBindings/CBindings.h"
 
